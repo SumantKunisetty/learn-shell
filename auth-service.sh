@@ -9,7 +9,6 @@ tar xzf /tmp/auth-service.tar.gz
 cd /app
 chown -R appuser:appuser /app
 chmod o-rwx /app -R
-cp auth-service.sh /etc/systemd/system/
 systemctl daemon-reload
 systemctl enable auth-service
 systemctl start auth-service
