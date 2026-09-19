@@ -8,7 +8,9 @@ curl -L -o /tmp/auth-service.tar.gz https://raw.githubusercontent.com/raghudevop
 echo "completed"
 cd /app
 echo "move"
+pwd
 tar xzf /tmp/auth-service.tar.gz
+ls -latr
 echo "extracted"
 chown -R appuser:appuser /app
 chmod o-rwx /app -R
